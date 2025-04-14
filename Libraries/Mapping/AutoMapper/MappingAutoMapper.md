@@ -21,7 +21,7 @@ namespace Order.API.Mapping
     }
 }
 ```
-*CreateMap: Bu metod, kaynak ve hedef türleri arasında bir eşleme oluşturur. Örneğin, CreateMap<CreateBasketDTO, Basket>() ifadesi, CreateBasketDTO türündeki veriyi Basket türüne dönüştürür.
-*ReverseMap: Bu metod, eşlemeyi iki yönlü yapar. Hem CreateBasketDTO'yu Basket'e hem de Basket'i CreateBasketDTO'ya dönüştürmek için kullanılır.
-*DTO'lar ve Entity'ler: DTO'lar genellikle dışa veya içe veri taşımak için kullanılır ve genellikle controller'larda işlenir. Entity'ler ise veritabanı modelini temsil eder.
+* CreateMap: Bu metod, kaynak ve hedef türleri arasında bir eşleme oluşturur. Örneğin, CreateMap<CreateBasketDTO, Basket>() ifadesi, CreateBasketDTO türündeki veriyi Basket türüne dönüştürür.
+* ReverseMap: Bu metod, eşlemeyi iki yönlü yapar. Hem CreateBasketDTO'yu Basket'e hem de Basket'i CreateBasketDTO'ya dönüştürmek için kullanılır.
+* DTO'lar ve Entity'ler: DTO'lar genellikle dışa veya içe veri taşımak için kullanılır ve genellikle controller'larda işlenir. Entity'ler ise veritabanı modelini temsil eder.
 
