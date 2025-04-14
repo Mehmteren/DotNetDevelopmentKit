@@ -1,6 +1,6 @@
 * Controller Configuration
 
-*GET – api/basket/
+* GET – api/basket/
 ```razor
 [HttpGet]
 public async Task<ActionResult<IEnumerable<Baskett>>> GetBaskets()
@@ -11,7 +11,7 @@ public async Task<ActionResult<IEnumerable<Baskett>>> GetBaskets()
 ```
 * Sepet verilerini IBasketService üzerinden alır.
 
-*GET – api/basket/{id}
+* GET – api/basket/{id}
 ```razor
 [HttpGet("{id}")]
 public async Task<ActionResult<Baskett>> GetBasket(int id)
