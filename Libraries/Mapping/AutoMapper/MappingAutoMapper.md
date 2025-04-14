@@ -1,5 +1,5 @@
 
-*AutoMapper Yapılandırması
+* AutoMapper Yapılandırması
 ```razor
 using AutoMapper;
 using Order.API.Data.Entities;
