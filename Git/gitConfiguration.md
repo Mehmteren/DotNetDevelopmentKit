@@ -1,4 +1,4 @@
-# Git Komutları ve Açıklamaları
+# Git Komutları
 
 * Belirli bir klasörü repodan kaldır
 ```razor
