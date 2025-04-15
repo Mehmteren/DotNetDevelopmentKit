@@ -28,7 +28,7 @@ git push origin master
 ```razor
 git reset --hard origin/master     # Remote'a birebir eşitle
 git clean -fd                      # Untracked dosyaları da temizle
-razor
+```
 
 * Remote’dan en güncel kodları çek
 ```razor
