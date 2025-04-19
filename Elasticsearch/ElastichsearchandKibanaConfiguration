@@ -1,0 +1,21 @@
+* Elasticsearch Konteynerini Başlat
+```razor
+docker run -d --name elasticsearch -p 9200:9200 -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.14.3
+```
+* Elasticsearch'i microservice-network ağına bağla
+```razor
+docker network connect microservice-network elasticsearch
+```
+
+**************
+
+* Kibana Konteynerini Başlat
+```razor
+docker run -d --name kibana -p 5601:5601 -e "ELASTICSEARCH_HOST=http://elasticsearch:9200" kibana:8.14.3
+```
+
+* Kibana'yı microservice-network ağına bağla
+
+```razor
+docker network connect microservice-network kibana
+```
