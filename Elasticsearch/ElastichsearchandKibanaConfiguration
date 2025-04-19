@@ -5,6 +5,7 @@ docker run -d --name elasticsearch -p 9200:9200 -e "discovery.type=single-node" 
 * Elasticsearch'i microservice-network ağına bağla
 ```razor
 docker network connect microservice-network elasticsearch
+
 ```
 
 
