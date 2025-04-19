@@ -7,7 +7,6 @@ docker run -d --name elasticsearch -p 9200:9200 -e "discovery.type=single-node" 
 docker network connect microservice-network elasticsearch
 ```
 
-**************
 
 * Kibana Konteynerini Başlat
 ```razor
