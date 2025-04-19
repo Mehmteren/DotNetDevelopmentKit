@@ -18,4 +18,8 @@ docker network connect microservice-network Basket.API              // Basket.AP
 docker network connect microservice-network Stock.API        // Stock.API adlı servisi "microservice-network" ağına bağlar
 
 
+
+NETWORK İÇİNDEKİ TÜM CONTAİNERLERİ GÖRÜNTLEDİK
+docker network inspect microservice-network
+
 ```
