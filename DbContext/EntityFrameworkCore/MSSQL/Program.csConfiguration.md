@@ -11,7 +11,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
         configuration.GetConnectionString("DefaultConnection"),
 });
-
 ```
 
 * MSSQL - appsettings.json yapılandırması
