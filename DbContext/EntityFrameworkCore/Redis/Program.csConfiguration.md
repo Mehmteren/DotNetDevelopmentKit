@@ -15,3 +15,25 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.InstanceName = "YourAppCache:";
 });
 ```
+
+
+* REDİS KURULUM CONTAİNER OLUŞTURULMASI VEDE NETWORKE EKLENMESİ
+
+```razor
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+docker run --name redis -p 1453:6379 -d redis
+});
+```
+```razor
+docker ps
+
+docker exec -it e53 redis-cli
+
+PING --> PONG çıktısı almamız gerek
+
+```
+* network e ekledik
+```razor
+docker network connect microservice-network redis
+```
