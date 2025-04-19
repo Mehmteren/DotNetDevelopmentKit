@@ -33,7 +33,10 @@ docker exec -it e53 redis-cli
 PING --> PONG çıktısı almamız gerek
 
 ```
-* network e ekledik
+* network e ekledik ve network içine baktık
 ```razor
 docker network connect microservice-network redis
+
+docker network inspect microservice-network
+
 ```
