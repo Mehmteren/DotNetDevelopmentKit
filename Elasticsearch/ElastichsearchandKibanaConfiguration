@@ -19,3 +19,8 @@ docker run -d --name kibana -p 5601:5601 -e "ELASTICSEARCH_HOST=http://elasticse
 ```razor
 docker network connect microservice-network kibana
 ```
+network içinde çalışan containerler
+```razor
+docker network inspect microservice-network
+```
+
