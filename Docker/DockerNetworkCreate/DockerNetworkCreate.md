@@ -23,3 +23,16 @@ NETWORK İÇİNDEKİ TÜM CONTAİNERLERİ GÖRÜNTLEDİK
 docker network inspect microservice-network
 
 ```
+
+
+* containerleri networke bağladık
+```razor
+PS C:\Users\MSI> docker network connect microservice-network Product.API
+PS C:\Users\MSI> docker network connect microservice-network SagaStateMachine.Service
+PS C:\Users\MSI> docker network connect microservice-network Invoice.API
+PS C:\Users\MSI> docker network connect microservice-network Order.API
+PS C:\Users\MSI> docker network connect microservice-network Payment.API
+PS C:\Users\MSI> docker network connect microservice-network Users.API
+PS C:\Users\MSI> docker network connect microservice-network Basket.API
+PS C:\Users\MSI> docker network connect microservice-network Stock.API
+```
